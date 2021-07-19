@@ -27,4 +27,4 @@ setInterval(function() {1
     for (let i = 8; i < 16; i++) {
       mcp.digitalRead(i, (error, value) => console.log(error, value));
     }
-});
+}, 1000);
