@@ -2,7 +2,7 @@ const MCP23017 = require('node-mcp23017')
 
 const mcp = new MCP23017({
     address: 0x20, //all address pins pulled low
-    device: '/dev/i2c-1', // Model B
+    device: 1, // Model B
     debug: false
 })
 
