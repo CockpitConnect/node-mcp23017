@@ -8,6 +8,6 @@ const mcp = new MCP23017({
 
 mcp.pinMode(6, mcp.INPUT);
 
-setInterval(function() {1
+setInterval(function() {
     mcp.digitalRead(6, (error, value) => console.log(error, value));
 }, 1000);
