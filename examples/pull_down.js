@@ -1,10 +1,10 @@
-var MCP23017 = require('node-mcp23017');
+const MCP23017 = require('node-mcp23017')
 
-var mcp = new MCP23017({
-  address: 0x20, //all address pins pulled low
-  device: '/dev/i2c-1', // Model B
-  debug: false
-});
+const mcp = new MCP23017({
+    address: 0x20, //all address pins pulled low
+    device: '/dev/i2c-1', // Model B
+    debug: false
+})
 
 mcp.pinMode(0, mcp.INPUT_PULLUP);
 mcp.pinMode(1, mcp.INPUT_PULLUP);
@@ -23,16 +23,8 @@ mcp.pinMode(13, mcp.INPUT_PULLUP);
 mcp.pinMode(14, mcp.INPUT_PULLUP);
 mcp.pinMode(15, mcp.INPUT); // this one should float from time to time
 
-setInterval(function(){
-
-var test = function(i){
-        return function(err, value){
-            if(value == false){
-                console.log("Pull down on pin " + i, value);
-            }
-        }
-}
-
-for (var i = 8; i < 16; i++) {
-  mcp.digitalRead(i, test(i));
-}
+setInterval(function() {1
+    for (let i = 8; i < 16; i++) {
+      mcp.digitalRead(i, (error, value) => console.log(error, value));
+    }
+});

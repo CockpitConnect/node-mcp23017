@@ -1,15 +1,15 @@
 {
-  "name": "node-mcp23017",
-  "version": "0.0.7",
-  "description": "Library to use the MCP23017 16bit I/O Expander with the Raspberry Pi",
-  "main": "main.js",
-  "author": "Kai Henzler",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/kaihenzler/node-mcp23017"
-  },
-  "license": "MIT",
-  "dependencies": {
-    "i2c-bus": "^5.2.2"
-  }
+    "name": "node-mcp23017",
+    "version": "0.0.7",
+    "description": "Library to use the MCP23017 16bit I/O Expander with the Raspberry Pi",
+    "main": "main.js",
+    "author": "Kai Henzler",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kaihenzler/node-mcp23017"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "i2c-bus": "^5.2.2"
+    }
 }
