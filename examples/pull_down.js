@@ -1,4 +1,4 @@
-const MCP23017 = require('node-mcp23017')
+const MCP23017 = require('../lib/mcp23017')
 
 const mcp = new MCP23017({
     address: 0x20, //all address pins pulled low
